@@ -11,14 +11,13 @@
 \score {
   \new Staff \relative c {
 	\clef bass
-	% Verse
-	d1 | f | c | c |
-	d1 | f | c2.~ c16 g8. | c,1 |
-	d'2~ d8 d8.[ e8.] | f2~ f8 f8. e8. | c2~ c8 c8. g8. | c2~ c8 c8. e8. 
-	d2~ d8 d8. g8. | f2~ f8 f8. e8. | c,2.. e'8~ | e8 d4 c4 a4 g8 |
+	\key e \major
+	% Bridge
+	fis1 | a | e | e, |
+	fis'1 | a | e | e, |
   }
   \header {
-	piece = "Verse"
+	piece = "Intro"
   }
 }
 
@@ -26,21 +25,24 @@
   \new Staff \relative c {
 	\clef bass
 	\key e \major
-	% Bridge
-	fis1 | a | e | e, |
-	fis'1 | a | e | e, |
+	% Verse
+	fis1 | a | e | e |
+	fis1 | a | e2.~ e16 b8. | e,1 |\break
+	fis'2~ fis8 fis8.[ gis8.] | a2~ a8 a8.[ gis8.] | e2~ e8 e8.[ b8.] | e2~ e8 e8.[ gis8.] 
+	fis2~ fis8 fis8.[ b8.] | a2~ a8 a8.[ gis8.] | e,2.. gis'8~ | gis8 fis4 e4 cis4 b8 |
   }
   \header {
-	piece = "Bridge"
+	piece = "Verse"
   }
 }
 
 \score {
   \new Staff \relative c, {
 	\clef bass
+	\key e \major
 	% Chorus
-	d4 d'8. a16 d8 d4 a8 | f4 f'8. c16 f8 f4 c8 | c,4 c'8. g16 c8 c4 g8 | c,4 c'8. g16 c8 c4 a16 g |
-	d4 d'8. a16 d8 d4. | f,1 | c'2 c8 c4. | c4. d4 c g8 |
+	fis4~ fis8. cis'16 fis8 fis4 cis8 | a4~ a8. e'16 a8 a4 e8 | e,4 e'8. b16 e8 e4 b8 | e,4 e'8. b16 e8 e4 a,16 gis |\break
+	fis4 fis'8. cis16 fis8 fis4. | a,1 | e'2 e8 e4 b8 | e4. fis4 e b8 |
   }
   \header {
 	piece = "Chorus"
