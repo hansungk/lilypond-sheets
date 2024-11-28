@@ -57,6 +57,8 @@
         fes,4 r16 ces' r fes r8 ges4 aes8 | ees4. r16 bes r8 ees,4 bes'8
         aes4 r16 ees r aes r8 bes4 ees8 | aes,4 aes16 ees r aes r bes ees,8 d d'
         des,4 r16 aes' r ces r c des8 r16 des, aes'8 | ges4 r16 des r ges r8 aes4 des8
+        ges,4 aes4 bes8. b16 r ees c8 | bes4. r16 fes r8 bes,8. fes'8.
+        ees4 r16 bes r ees r8 g8 bes4 | des4. r16 aes r2
   }
   \header {
 	piece = "Solo"
